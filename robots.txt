@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /assets/img/
+Sitemap: https://rayton.com.ua/sitemap.xml
