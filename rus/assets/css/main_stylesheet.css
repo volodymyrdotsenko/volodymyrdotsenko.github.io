@@ -4759,7 +4759,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .v-light .contact-up::before {
-  background: #f6bc33 url(https://rayton.com.ua/assets/img/rayt_lines_3.png) no-repeat;
+  background: #f6bc33 url(./assets/img/rayt_lines_3.png) no-repeat;
   height: 640px;
     max-height: 120vh;
     background-size: 380px;
