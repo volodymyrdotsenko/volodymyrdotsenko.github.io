@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+
+<head>
+   <meta charset="utf-8" />
+    <title>Test</title>
+      <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap" rel=" stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap" rel=" stylesheet">
+    <!-- custom styles  -->
+    <link href="./assets/css/stylesheet.css" rel=" stylesheet" />
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+    <!-- jquery scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <div class="left-column">
+      <button class="accordion" style="margin: unset;">Категории</button>
+      <div class="panel">
+        <p>Category list</p>
+      </div>
+      <button class="accordion">Сортировать по:</button>
+      <div class="panel">
+        <p>Sorting criteria</p>
+      </div>
+      <button class="accordion">Цена:</button>
+      <div class="panel">
+        <br>
+        <div id="slider-range"></div>
+        <p><input type="text" id="amount" readonly class="slider_label"></p>
+      </div>
+      <button class="accordion">Площадь:</button>
+      <div class="panel"></div>
+      <button class="accordion">Размер:</button>
+      <div class="panel"></div>
+      <button class="accordion">Этажность:</button>
+      <div class="panel"></div>
+    </div>
+
+    <div class="right-column">
+      <div class="product-thumb">
+        <picture><source srcset="./assets/img/house_1.webp" type="image/webp"><img src="./assets/img/house_1.png" alt="" class="product_img"></picture>
+          <h2 class="product_title">Современная беседка Sidney</h2>
+          <div class="specs">
+            <div style="float:left;">
+            <picture class="specs_icons"><source srcset="./assets/img/dimensions.webp" type="image/webp"><img src="./assets/img/dimensions.png" alt=""></picture>
+              <p class="specs_dim">6 на 4</p>
+            </div>
+            <div style="float:right;">
+              <picture class="specs_icons"><source srcset="./assets/img/space.webp" type="image/webp"><img src="./assets/img/space.png" alt=""></picture> 
+                <p class="specs_sqr">24 м²</p>
+              </div>
+            </div>
+            <div class="button_block">
+              <button class="button">Ознакомится</button>
+              <label class="label">309 120 грн</label>
+            </div>
+      </div>
+      <div class="product-thumb">
+        <picture><source srcset="./assets/img/house_2.webp" type="image/webp"><img src="./assets/img/house_2.png" alt="" class="product_img"></picture>
+          <h2 class="product_title">Современная беседка Philadelphia</h2>
+          <div class="specs">
+            <div style="float:left;">
+              <picture class="specs_icons"><source srcset="./assets/img/dimensions.webp" type="image/webp"><img src="./assets/img/dimensions.png" alt=""></picture> 
+                <p class="specs_dim">7 на 4</p>
+            </div>
+            <div style="float:right;">
+              <picture class="specs_icons"><source srcset="./assets/img/space.webp" type="image/webp"><img src="./assets/img/space.png" alt=""></picture> 
+                <p class="specs_sqr">28 м²</p>
+            </div>
+          </div>
+          <div class="button_block">
+            <button class="button">Ознакомится</button>
+            <label class="label">309 120 грн</label>
+          </div>
+      </div>
+      <div class="product-thumb">
+        <picture><source srcset="./assets/img/house_2.webp" type="image/webp"><img src="./assets/img/house_2.png" alt="" class="product_img"></picture>
+          <h2 class="product_title">Современная беседка Philadelphia</h2>
+          <div class="specs">
+            <div style="float:right;">
+              <picture class="specs_icons"><source srcset="./assets/img/dimensions.webp" type="image/webp"><img src="./assets/img/dimensions.png" alt=""></picture>
+              <p class="specs_dim">7 на 4</p>
+            </div>
+            <div style="float:left;">
+              <picture class="specs_icons"><source srcset="./assets/img/space.webp" type="image/webp"><img src="./assets/img/space.png" alt=""></picture>
+              <p class="specs_sqr">28 м²</p>
+            </div>
+          </div>
+          <div class="button_block">
+            <button class="button">Ознакомится</button>
+            <label class="label">309 120 грн</label>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 137100,
+      max: 309120,
+      values: [ 137100, 309120 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( + ui.values[ 0 ] + "                                        " +ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+      "                                        " + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
