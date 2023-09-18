@@ -1,6 +1,6 @@
 <head>
   <!-- Required meta tags -->
-<!--   <meta http-equiv='refresh' content='9; url=https://rayton.com.ua'>
+<!--   <meta http-equiv='refresh' content='9; url=.'>
  -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
