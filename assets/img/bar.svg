@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="307" height="148" viewBox="0 0 307 148" fill="none"> <g filter="url(#filter0_d)"> <rect x="2" y="1" width="303" height="144" rx="10" fill="#F7F7F2">
+ </rect> </g> <g clip-path="url(#clip0)"> <path d="M41 38H39V108.7H41V38Z" fill="black">
+ </path> <path d="M49 38H45V108.7H49V38Z" fill="black">
+ </path> <path d="M59 38H53V108.7H59V38Z" fill="black">
+ </path> <path d="M63 38H61V108.7H63V38Z" fill="black">
+ </path> <path d="M71 38H67V108.7H71V38Z" fill="black">
+ </path> <path d="M79 38H73V108.7H79V38Z" fill="black">
+ </path> <path d="M85 38H83V108.7H85V38Z" fill="black">
+ </path> <path d="M95 38H89V108.7H95V38Z" fill="black">
+ </path> <path d="M101 38H97V108.7H101V38Z" fill="black">
+ </path> <path d="M109 38H103V108.7H109V38Z" fill="black">
+ </path> <path d="M115 38H111V108.7H115V38Z" fill="black">
+ </path> <path d="M125 38H119V108.7H125V38Z" fill="black">
+ </path> <path d="M131 38H129V108.7H131V38Z" fill="black">
+ </path> <path d="M137 38H133V108.7H137V38Z" fill="black">
+ </path> <path d="M143 38H141V108.7H143V38Z" fill="black">
+ </path> <path d="M151 38H145V108.7H151V38Z" fill="black">
+ </path> <path d="M159 38H155V108.7H159V38Z" fill="black">
+ </path> <path d="M169 38H163V108.7H169V38Z" fill="black">
+ </path> <path d="M173 38H171V108.7H173V38Z" fill="black">
+ </path> <path d="M181 38H177V108.7H181V38Z" fill="black">
+ </path> <path d="M189 38H183V108.7H189V38Z" fill="black">
+ </path> <path d="M195 38H193V108.7H195V38Z" fill="black">
+ </path> <path d="M203 38H199V108.7H203V38Z" fill="black">
+ </path> <path d="M209 38H207V108.7H209V38Z" fill="black">
+ </path> <path d="M217 38H211V108.7H217V38Z" fill="black">
+ </path> <path d="M229 108.7H227V38H229V108.7ZM223 108.7H221V38H223V108.7Z" fill="black">
+ </path> <path d="M247 108.7H243V38H247V108.7ZM237 108.7H233V38H237V108.7Z" fill="black">
+ </path> <path d="M259 38H253V108.7H259V38Z" fill="black">
+ </path> <path d="M263 38H261V108.7H263V38Z" fill="black">
+ </path> <path d="M269 38H265V108.7H269V38Z" fill="black">
+ </path> </g> <defs> <filter id="filter0_d" x="0" y="0" width="307" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix">
+ </feFlood> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+ </feColorMatrix> <feOffset dy="1">
+ </feOffset> <feGaussianBlur stdDeviation="1">
+ </feGaussianBlur> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0">
+ </feColorMatrix> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">
+ </feBlend> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape">
+ </feBlend> </filter> <clipPath id="clip0"> <rect x="39" y="38" width="230" height="70.7" fill="white">
+ </rect> </clipPath> </defs> </svg> 
