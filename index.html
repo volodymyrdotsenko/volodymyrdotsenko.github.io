@@ -1907,6 +1907,16 @@
  AOS.init({
    duration: 800, // values from 0 to 3000, with step 50ms
  });
+ $(document).ready(function(){
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 1,
+        autoplay: false,
+        // autoPlaySpeed: 5000,
+        // autoPlayTimeout: 5000,
+        // autoplayHoverPause: true
+    });
+});
  </script>
    <script src="js/custom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
