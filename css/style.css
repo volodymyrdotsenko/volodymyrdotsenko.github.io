@@ -8558,34 +8558,34 @@ ul.list-unstyled.links.mb-4.footer-logos {
     align-items: center;
     height: -webkit-fill-available;
 }
-.col-3.aos-init.aos-animate.lowicz_prod {
+.col-6.col-lg-3.aos-init.aos-animate.lowicz_prod {
     /* background: #002074; */
     padding: unset;
     overflow: visible !important;
     margin: unset;
 }
 
-.col-3.aos-init.aos-animate.lowicz_prod img.img-fluid.mb-3 {
+.col-6.col-lg-3.aos-init.aos-animate.lowicz_prod img.img-fluid.mb-3 {
     background: #002074;
     border: 1rem !important;
 }
 
-.col-3.aos-init.aos-animate.lowicz_prod {
+.col-6.col-lg-3.aos-init.aos-animate.lowicz_prod {
     padding: 1rem;
 }
 
-.col-3.aos-init.mlekovita_prod.aos-animate, .col-3.aos-init.mlekovita_prod.aos-animate>img {
+.col-6.col-lg-3.aos-init.mlekovita_prod.aos-animate, .col-6.col-lg-3.aos-init.mlekovita_prod.aos-animate>img {
     color: #ca3540 !important;
     padding: 1rem !important;
 }
 
-.col-3.aos-init.mlekovita_prod.aos-animate>img {
+.col-6.col-lg-3.aos-init.mlekovita_prod.aos-animate>img {
     background: #ca3540;
 }
 .col-3.aos-init.polmlek_prod.aos-animate {
         padding: 1rem !important;
 }
-.col-3.aos-init.mlekovita_prod.aos-animate p {
+.col-6.col-lg-3.aos-init.mlekovita_prod.aos-animate p {
     color: #165893 !important;
 }
 .col-3.aos-init.polmlek_prod.aos-animate img, .aos-init.polmlek_prod.aos-animate img {
