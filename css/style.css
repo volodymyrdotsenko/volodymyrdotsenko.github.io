@@ -8588,7 +8588,7 @@ ul.list-unstyled.links.mb-4.footer-logos {
 .col-3.aos-init.mlekovita_prod.aos-animate p {
     color: #165893 !important;
 }
-.col-3.aos-init.polmlek_prod.aos-animate img {
+.col-3.aos-init.polmlek_prod.aos-animate img, .aos-init.polmlek_prod.aos-animate img {
     background: #165893 !important;
     
 }
