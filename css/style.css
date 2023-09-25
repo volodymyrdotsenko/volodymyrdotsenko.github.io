@@ -8737,3 +8737,55 @@ svg.bi.bi-arrow-right, svg.bi.bi-arrow-left {
 svg.bi.bi-arrow-right:hover, svg.bi.bi-arrow-left:hover {
     color: #fff;
 }
+a.col-3.aos-init.aos-animate {
+    scale: 100%;
+    transition: 0.5s ease;
+}a.col-3.aos-init.aos-animate:hover {
+    scale: 110%;
+    transition: 0.5s ease;
+}
+
+table td>strong, table td {
+    color: #fff !important;
+}
+
+ul.product_ul li {
+    list-style: none;
+}
+
+.site-footer {}.container.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tool-bar>div {
+    display: flex;
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool-bar {
+    width: -webkit-fill-available;
+}
+
+.col-md-3.col-xs-6 {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.input-group.input-group-sm {}
+
+.form-group.input-group.input-group-sm {
+    margin: unset;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+label.input-group-addon {
+    margin: unset;
+}
+
+div#top2 {}
