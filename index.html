@@ -68,7 +68,34 @@
        url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+.col-3.aos-init.aos-animate img.img-fluid.mb-3.w-50.rounded-circle {
+    margin: auto !important;
+}
+.col-lg-12.order-lg-12.js-custom-dots>a, .col-lg-12.order-lg-12.js-custom-dots>a * {
+    padding: unset;
+    margin: unset !important;
+    display: flex !important;
+    align-items: center;
+    gap: 0rem;
+   
+    max-width: unset !important;
+}
 
+.col-lg-12.order-lg-12.js-custom-dots>a {
+    padding: 1rem !important;
+}
+.col-lg-12.order-lg-12.js-custom-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row.justify-content-between:has(.col-lg-12.order-lg-12.js-custom-dots) {
+    flex-direction: column-reverse;
+}
+.small.py-vh-3.w-100.overflow-hidden.polestar {
+    background: #a71d1e;
+    color: #fff;
+}
 </style>
   <body data-bs-spy="scroll" data-bs-target="#navScroll" data-spy="scroll" data-target=".site-navbar-target" data-offset="100" >
 <!-- <body data-bs-spy="scroll" data-bs-target="#navScroll" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0"> -->
@@ -89,31 +116,34 @@
       <div class="site-navigation">
         <!-- <a href="index.html" class="logo m-0 float-left">Landing<span class="text-primary">.</span></a> -->
 <a class="logo m-0 float-left" href="/" style="/* background: #117be9; */color: #1158b2;align-self: center;display: flex;font-size: 5rem;display: flex;/* flex-wrap: wrap; */justify-content: center;">
-  <img src="img/MASK_SVG.svg" class="mask-img mask-img-min" style="/* filter: hue-rotate(577deg); */">
-  <span class="ms-1 fw-bolder">NexaTone</span>
+  <img src="http://localhost:8888/image/catalog/logos/bez nazwy 3.png" class="mask-img mask-img-min" style="/* filter: hue-rotate(577deg); */max-width: 10rem;">
+  
 </a>
         <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-left">
-          <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
+          <li class="active"><a href="#home-section" class="nav-link active">肉</a></li>
           <li class="has-children">
-            <a href="#" class="nav-link">Dropdown</a>
+            <a href="#" class="nav-link">牛奶和奶制品</a>
+
             <ul class="dropdown">
-              <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-              <li><a href="elements.html" class="nav-link">Elements</a></li>
-              <li class="has-children">
-                <a href="#">Menu Two</a>
-                <ul class="dropdown">
-                  <li><a href="#" class="nav-link">Sub Menu One</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Two</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="nav-link">Menu Three</a></li>
+               <li><a href="#" class="nav-link">Butter</a></li>
+                  <li><a href="#" class="nav-link">Bio product line</a></li>
+                  <li><a href="#" class="nav-link">Lactose free products</a></li>
+                  <li><a href="#" class="nav-link">Milk powder</a></li>
+                  <li><a href="#" class="nav-link">Milk UHT</a></li>
+                  <li><a href="#" class="nav-link">Procesed cheese</a></li>
+                  <li><a href="#" class="nav-link">WPC whey protein</a></li>
+                  <li><a href="#" class="nav-link">Cheese</a></li>
+                  <li><a href="#" class="nav-link">Mlekovita</a></li>
+                  <li><a href="#" class="nav-link">Polmlek</a></li>
+                  <li><a href="#" class="nav-link">Łowicz</a></li>
+
+               
             </ul>
           </li>
-          <li><a href="#features-section" class="nav-link">Features</a></li>
-          <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-          <li><a href="#about-section" class="nav-link">About</a></li>
-          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li><a href="#features-section" class="nav-link">联系我们</a></li>
+          
+          
+          
         </ul>
 
        <ul class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right">
@@ -187,94 +217,45 @@
       </div>
     </div>
   </nav> -->
-  <div class="w-100 overflow-hidden bg-gray-100" id="top">
-  <div class="w-100 overflow-hidden bg-gray-100" id="top">
-  <div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover aos-init aos-animate" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);">
+  
+
+<div class="w-100 overflow-hidden bg-gray-100 pb-5" id="top">
+  <div class="row justify-content-center pt-5">
+            <div class=" pt-5 text-center mb-5" style="
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+    gap: 1rem;
+">
+              <h1 class="heading aos-init aos-animate" data-aos="fade-up" data-aos-delay="0" style="
+    margin: unset;
+">Welcome to
+<!-- <span class="d-block">by <a href="https://untree.co">Untree.co</a></span> -->
+
+</h1><a class="logo m-0 float-left" href="/" style="/* background: #117be9; */color: #1158b2;align-self: center;display: flex;font-size: 5rem;display: flex;/* flex-wrap: wrap; */justify-content: center;">
+  
+  <img src="http://localhost:8888/image/catalog/logos/bez nazwy 3.png" class="mask-img mask-img-min" style="/* filter: hue-rotate(577deg); */max-width: 10rem;">
+</a>
+            </div>
+          </div>
+
+<div class="w-100 overflow-hidden bg-gray-100" id="top">
+  <div class="container-fluid position-relative">
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover aos-init aos-animate" data-aos="fade-left" style="background: #aa271d url(http://localhost:8888/image/cache/catalog/banner/h1pban1-kopia-1920x720.png);width: -webkit-fill-available !important;max-width: unset;background-size: contain !important;background-repeat: no-repeat;">
     
   </div>
     <div class="row">
 
 <div class="col-lg-7 py-vh-6 position-relative aos-init aos-animate" data-aos="fade-right">
-  <h1 class="display-1 fw-bold mt-5">Sell more useless stuff faster!</h1>
-  <p class="lead">To be honest, this is just a stupid placeholder text. We don´t know how to sell anything, not even lesser or slower as you.</p>
+  <h1 class="display-1 fw-bold mt-5">好的传统!</h1>
+  <p class="lead">为了您的健康和保证您美好的心情，高质量的纯天然奶制品,</p>
   <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Get started free</a>
 </div>
 
+</div>
 
-<div class="untree_co-section">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-12 mb-5 aos-init" data-aos="fade-up">
-          <span class="caption">Features</span>
-          <h2 class="heading">Переваги співпраці з нами
-
-</h2>
-        </div>
-
-        <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="0">
-          <div class="service">
-            <div class="service-icon color-1 mb-4">
-              <svg class="bi bi-app-indicator" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
-                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-              </svg>
-            </div> <!-- /.icon -->
-            <div class="service-contents">
-              
-              <p>На спільність з нашою веб-студією приходять клієнти, оскільки ми несемо нашу величезну експертизу і професійність у кожному проекті. 
-</p>  
-            </div> <!-- /.service-contents-->
-          </div> <!-- /.service -->
-        </div> <!-- /.col-lg-3 -->
-
-        <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="100">
-          <div class="service">
-            <div class="service-icon color-2 mb-4">
-              <svg class="bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
-                <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
-              </svg>
-            </div> <!-- /.icon -->
-            <div class="service-contents">
-              
-              <p>Ми пишаємося індивідуальним підходом до кожного клієнта, оскільки розуміємо, що кожен бізнес унікальний. Ми ретельно слухаємо ваші потреби, розробляємо персоналізовані рішення та надаємо найкращу підтримку. Наша команда завжди готова допомогти вам досягти ваших цілей та забезпечити успішну онлайн-присутність.</p>  
-            </div> <!-- /.service-contents-->
-          </div> <!-- /.service -->
-        </div> <!-- /.col-lg-3 -->
-
-        <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="200">
-          <div class="service">
-            <div class="service-icon color-3 mb-4">
-              <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
-                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
-              </svg>
-            </div> <!-- /.icon -->
-            <div class="service-contents">
-              
-              <p>Наша підтримка завжди на зв'язку, готова вирішувати ваші питання і надавати необхідну допомогу. Ми також забезпечуємо постійне обслуговування та оновлення вашого сайту, щоб ви могли залишатися впевненими в його надійності і актуальності.</p>  
-            </div> <!-- /.service-contents-->
-          </div> <!-- /.service -->
-        </div> <!-- /.col-lg-3 -->
-
-        <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="300">
-          <div class="service">
-            <div class="service-icon color-4 mb-4">
-              <svg class="bi bi-collection" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"></path>
-              </svg>
-            </div> <!-- /.icon -->
-            <div class="service-contents">
-              
-              <p>Ми не тільки створюємо сайти, але й надаємо повний спектр послуг, включаючи SEO-оптимізацію, контент-маркетинг, підтримку та обслуговування. Ви можете бути впевнені, що ваша інтернет-стратегія буде в надійних руках.</p>  
-            </div> <!-- /.service-contents-->
-          </div> <!-- /.service -->
-        </div> <!-- /.col-lg-3 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div>
 
 
 </div>
@@ -284,54 +265,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-12">
-          <div class="dots"></div>
-          <div class="row justify-content-center">
-            <div class="col-md-7 text-center mb-5" style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-">
-              <h1 class="heading aos-init" data-aos="fade-up" data-aos-delay="0" style="
-    margin: unset;
-">Welcome to
-<!-- <span class="d-block">by <a href="https://untree.co">Untree.co</a></span> -->
-
-</h1><a class="logo m-0 float-left" href="/" style="/* background: #117be9; */color: #1158b2;align-self: center;display: flex;font-size: 5rem;display: flex;/* flex-wrap: wrap; */justify-content: center;">
-  <img src="img/MASK_SVG.svg" class="mask-img mask-img-min" style="/* filter: hue-rotate(577deg); */">
-  <span class="ms-1 fw-bolder">NexaTone</span>
-</a>
-            </div>
-          </div>
-          <div class="row align-items-center">
-
-            <div class="col-lg-7">
-              <div class="intro">
-
-                <div class="excerpt aos-init" data-aos="fade-up" data-aos-delay="100">
-                  <span class="caption">Ласкаво просимо
-</span>
-                  <h2 class="font-weight-bold">До нашої веб-студії!
-
-</h2>
-                  <p>Ми - креативна команда професіоналів, яка спеціалізується на створенні унікальних та якісних веб-рішень. Наша студія надає повний спектр послуг, пов'язаних з веб-розробкою та дизайном, щоб допомогти вам перетворити ваші ідеї в віртуальну реальність.
-</p>  
-                </div> <!-- /.excerpt -->
-                <p data-aos="fade-up" data-aos-delay="200" class="aos-init">
-                  <a href="#features-section" class="btn btn-primary smoothscroll mr-1">See Features</a>
-                  <a href="#pricing-section" class="btn btn-outline-primary smoothscroll">Pricing</a>
-                </p>
-              </div>
-              
-            </div> <!-- /.col-lg-5 -->
-            <div class="col-lg-4">
-              <div class="illustration" style="display: flex;">
-                <img src="img/MASK_SVG.svg" class="mask-img" style="filter: hue-rotate(577deg);">
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
       </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -339,46 +273,49 @@
       
     </div> -->
 </div>
-  <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+   <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus" style="
+    overflow: visible !important;
+">
   <div class="container">
       
 <div class="row d-flex justify-content-between align-items-center">
   <div class="col-lg-6">
   <div class="row gx-5 d-flex">
     <div class="col-md-11">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_plmlk.png');--bs-aspect-ratio: 49%;background-position: left bottom;">
       </div>
     </div>
     <div class="col-md-11 mt-5">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_plmlk2.jpg');--bs-aspect-ratio: 48%;background-position: left bottom;">
       </div>
     </div>
     
   </div>
 </div>
 <div class="col-lg-6">
-  <div class="shadow ratio rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 100%;">
+  <div class="shadow ratio rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/polml.jpg');--bs-aspect-ratio: 100%;background-size: contain;">
       </div>
 </div>
 </div>
 
   </div>
-</div>
-<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus1">
+</div><div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus1" style="
+    overflow: visible !important;
+">
   <div class="container">
       
 <div class="row d-flex justify-content-between align-items-center">
   <div class="col-lg-6">
-  <div class="shadow ratio rounded bg-cover bp-center align-self-end aos-init" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 100%;">
+  <div class="shadow ratio rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/mleko.jpg');--bs-aspect-ratio: 100%;background-size: contain;background-position: center;">
       </div>
 </div><div class="col-lg-6">
   <div class="row gx-5 d-flex">
     <div class="col-md-11">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_mlek.jpg');--bs-aspect-ratio: 49%;background-position: left bottom;background-size: contain;">
       </div>
     </div>
     <div class="col-md-11 mt-5">
-      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_mlek%202.png');--bs-aspect-ratio: 49%;background-position: left bottom;background-size: cover;background-repeat: no-repeat;">
       </div>
     </div>
     
@@ -389,76 +326,69 @@
 
   </div>
 </div>
-
-<div class="py-vh-5 w-100 overflow-hidden" id="numbers">
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus3" style="
+    overflow: visible !important;
+">
   <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-  <div class="col-lg-5">
-    <h3 class="py-5 border-top border-dark aos-init" data-aos="fade-right">Our magic numbers</h3>
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_lowicz1.png');--bs-aspect-ratio: 49%;background-position: right top;background-size: cover;background-repeat: no-repeat;">
+      </div>
+    </div>
+    <div class="col-md-11 mt-5">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url('http://localhost:8888/image/catalog/banner/ban_lowicz2.jpg');--bs-aspect-ratio: 49%;background-position: top right;background-size: cover;background-repeat: no-repeat;">
+      </div>
+    </div>
+    
+  </div>
 </div>
 <div class="col-lg-6">
-  <div class="row">
-    <div class="col-12">
-    <h2 class="display-6 mb-5 aos-init" data-aos="fade-down">There are some important numbers for us. They are just numbers without any meaning, but we just love them.</h2>
-    </div>
-    <div class="col-lg-6 aos-init" data-aos="fade-up">
-      <div class="display-1 fw-bold py-4">42%</div>
-      <p class="text-black-50">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-    </div>
-    <div class="col-lg-6 aos-init" data-aos="fade-up">
-      <div class="display-1 fw-bold py-4">+300</div>
-      <p class="text-black-50">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-    </div>
-  </div>
+  <div class="shadow ratio rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background: url('http://localhost:8888/image/catalog/banner/lowi.jpg');--bs-aspect-ratio: 100%;background-size: cover;background-repeat: no-repeat;">
+      </div>
 </div>
 </div>
-
-  </div>
-</div> <!-- /.untree_co-section -->
-
-  
-
-</div>
-<div class="untree_co-section bg-light">
-    <div class="container">
-      <div class="row justify-content-between">
+      <div class="display-1 fw-bold py-4">报价</div><div class="row justify-content-between">
         <div class="col-lg-12 order-lg-12 js-custom-dots">
+          
 
           <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="0" data-index="1">
-            <div class="service-icon color-1 mb-4">
+          <!--   <div class="service-icon color-1 mb-4">
               <svg class="bi bi-app-indicator" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
                 <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
               </svg>
-            </div> <!-- /.icon -->
+            </div> --> <!-- /.icon -->
             <div class="service-contents">
-              <h3>Експертність та Професіоналізм</h3>
+              <h3>Polmlek</h3>
             </div> <!-- /.service-contents-->
           </a> <!-- /.service -->
 
           <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-index="2">
-            <div class="service-icon color-2 mb-4">
+          <!--   <div class="service-icon color-2 mb-4">
               <svg class="bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
                 <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
-              </svg>
-            </div> <!-- /.icon -->
+              </svg> 
+            </div> --><!-- /.icon -->
             <div class="service-contents">
-              <h3>Індивідуальний Підхід</h3>
+              <h3>Mlekovita</h3>
 
             </div> <!-- /.service-contents-->
           </a> <!-- /.service -->
 
 
           <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" data-index="3">
-            <div class="service-icon color-3 mb-4">
-              <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <!-- <div class="service-icon color-3 mb-4">
+             <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
                 <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
-              </svg>
-            </div>
+              </svg> 
+            </div>-->
             <div class="service-contents">
-              <h3>Технічна Підтримка та Зручність</h3>
+              <h3>Łowicz</h3>
               
             </div> 
           </a>
@@ -466,171 +396,559 @@
 
         </div>
         
+        
         <div class="col-lg-12">
-            <div class="owl-single no-dots owl-carousel">
-              <div class="item">
-               <div class="row pt-12">
-        <div class="col-12 mb-5 aos-init aos-animate" data-aos="fade-up">
+            <div class="owl-single no-dots owl-carousel" id="products_slider">
+             
+             <div class="item">
+               <div class="row  ">
+       <!--  <div class="col-12 mb-5 aos-init aos-animate" data-aos="fade-up">
           <span class="caption">Team</span>
-          <h2 class="heading">Наша команда</h2>
-        </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <h2 class="heading">报价</h2>
+        </div> -->
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div>
-        
+        </div> 
         
       </div>
               </div>
               <div class="item">
-                <span class="number">2/3</span><div class="row pt-12">
-        <div class="col-12 mb-5 aos-init aos-animate" data-aos="fade-up">
-          <span class="caption">Team</span>
-          <h2 class="heading">Наша команда</h2>
-        </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+                                <div class="row  ">
+
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           
             
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div>
+        </div> 
         
         
+        </div>
+      </div> <div class="item">
+                                <div class="row  ">
+
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div> 
+        
+        </div>
       </div>
               </div>
-              <div class="item">
-                <span class="number">3/3</span>
-                <div class="row pt-12">
-        <div class="col-12 mb-5 aos-init aos-animate" data-aos="fade-up">
-          <span class="caption">Team</span>
-          <h2 class="heading">Наша команда</h2>
-        </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div><div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
-          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
-          
-            
-        </div>
-        
-        
-      </div>
               </div>
 
+</div>
+          </div>
+          
+        </div> <!-- /.col-md-4 -->
+      </div> <!-- /.row --> 
 
+  </div>
+</div><div class="py-vh-5 w-100 overflow-hidden" id="numbers">
+  <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-6">
+    <h1 class="py-5 border-top border-dark aos-init" data-aos="fade-right">不含乳糖的脫脂奶粉</h1>
+</div>
+<div class="col-lg-4">
+  <div class="row">
+    <div class="col-12">
+    <h2 class="display-6 mb-5 aos-init" data-aos="fade-down">乳清粉</h2>
+    </div>
+    <div class="col-lg-12 aos-init" data-aos="fade-up">
+      <div class="display-1 fw-bold py-4">2500€</div>
+      <p class="text-black-50">FCA TBA</p>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+  <div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-4">
+  <div class="row">
+    <div class="col-12">
+    <h2 class="display-6 mb-5 aos-init" data-aos="fade-down">乳清粉</h2>
+    </div>
+    <div class="col-lg-12 aos-init" data-aos="fade-up">
+      <div class="display-1 fw-bold py-4">949€</div>
+      <p class="text-black-50">FCA TBA</p>
+    </div>
+    
+  </div>
+</div><div class="col-lg-6">
+    <h1 class="py-5 border-top border-dark aos-init" data-aos="fade-right">小麥粉由新鮮液體乳清製成。</h1>
+</div>
+
+</div></div>
+</div> <!-- /.untree_co-section -->
+
+  
+
+</div>
+<div class="untree_co-section bg-light">
+   <div class="container">
+      <div class="display-1 fw-bold py-4">报价</div><div class="row justify-content-between">
+        <div class="col-lg-12 order-lg-12 js-custom-dots">
+          
+
+          <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="0" data-index="1">
+          <!--   <div class="service-icon color-1 mb-4">
+              <svg class="bi bi-app-indicator" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+              </svg>
+            </div> --> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>牛肉</h3>
+            </div> <!-- /.service-contents-->
+          </a> <!-- /.service -->
+
+          <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-index="2">
+          <!--   <div class="service-icon color-2 mb-4">
+              <svg class="bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
+                <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
+              </svg> 
+            </div> --><!-- /.icon -->
+            <div class="service-contents">
+              <h3>猪肉</h3>
+
+            </div> <!-- /.service-contents-->
+          </a> <!-- /.service -->
+
+
+          <a href="#" class="service link horizontal d-flex aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" data-index="3">
+             <!-- <div class="service-icon color-3 mb-4">
+             <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
+                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
+              </svg> 
+            </div>-->
+            <div class="service-contents">
+              <h3>鸡肉</h3>
+              
+            </div> 
+          </a>
+
+
+        </div>
+        
+        
+        <div class="col-lg-12">
+            <div class="owl-single no-dots owl-carousel" id="products_slider">
+             
+             <div class="item">
+               <div class="row  ">
+       <!--  <div class="col-12 mb-5 aos-init aos-animate" data-aos="fade-up">
+          <span class="caption">Team</span>
+          <h2 class="heading">报价</h2>
+        </div> -->
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20cow-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div>
+        
+        
+      </div>
+              </div>
+              <div class="item">
+                                <div class="row  ">
+
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/a%20pig-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div>
+        
+        
+        </div>
+      </div> <div class="item">
+                                <div class="row  ">
+
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div><div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+          <img src="http://localhost:8888/image/cache/catalog/chkn-370x370.png" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          
+            
+        </div>
+        
+        </div>
+      </div>
+              </div>
+              </div>
+
+</div>
           </div>
           
         </div> <!-- /.col-md-4 -->
       </div> <!-- /.row -->
     </div> <!-- /.container -->
   </div> <!-- /.untree_co-section -->
+<div class="small py-vh-3 w-100 overflow-hidden polestar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 border-end aos-init aos-animate" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"></path>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">批量报价</h3>
+      <p>不含乳糖的脫脂奶粉乳清粉</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-3 border-end aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">肉类和奶制品</h3>
+      <p>高效物流</p>
+    </div>
+  </div>
+</div>
 
+<div class="col-md-6 col-lg-3 border-end aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">支持 24/7</h3>
+      <p>24 小时客服在线</p>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar" viewBox="0 0 16 16">
+        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"></path>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">100%交易安全</h3>
+      <p>可信赖的合作伙伴</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+ <div class="untree_co-section" id="testimonials-section">
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+  <span class="caption">Відгуки</span>
+  <h2 class="heading">Що говорять наші клієнти..</h2>
+
+
+          <div>
+            <a href="#" class="js-custom-prev-v2 cusotm-slider-nav custom-prev"><span><svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+              <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span></a>
+            <a href="#" class="js-custom-next-v2 cusotm-slider-nav custom-next"><span>
+              <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-12" data-aos="fade" data-aos-delay="200"  >
+          <div class="owl-2-slider owl-carousel" id="owl-carousel-logo">
+     <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>   <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div> <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="img-fluid">
+
+            </div> <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="img-fluid">
+
+            </div> <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="img-fluid">
+
+            </div> <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="img-fluid">
+
+            </div> <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="img-fluid">
+
+            </div>  <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>  <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>  <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>  <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>  <div class="item">
+                                    <img src="http://localhost:8888/image/cache/catalog/logo/logo@2x-185x62.png"alt="Image" class="col-2 img-fluid">
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.row -->    
+    </div> <!-- /.container -->  
+  </div> <!-- /.untree_co-section -->
   <div class="untree_co-section bg-blue">
     <div class="container">
       <div class="row justify-content-between">
@@ -1583,19 +1901,19 @@
           <span class="caption">Team</span>
           <h2 class="heading">Наша команда</h2>
         </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="100">
           <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           <h3 class="h5 font-weight-bold">1. Веб-розробник
 </h3>
           <p>Привіт, я відповідаю за веб-розробку в нашій студії. <span class="highlight">Моя мета - створювати сучасні, функціональні та адаптивні веб-сайти, які відповідають вашим потребам і надають користувачам найкращий досвід. </span>Я володію різними технологіями і завжди готовий до нових викликів у веб-розробці.</p>  
         </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="200">
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="200">
           <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           <h3 class="h5 font-weight-bold">2. Дизайнер
 </h3>
           <p>Вітаю вас! Моя роль у команді - <span class="highlight">створювати вишуканий дизайн і забезпечувати відмінний користувацький досвід. </span>Я працюю над концепціями та дизайном, щоб зробити ваш сайт незабутнім для ваших клієнтів і відвідувачів.</p>  
         </div>
-        <div class="col-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="300">
+        <div class="col-3 aos-init aos-animate" data-aos="fade-up" data-aos-delayt="300">
           <img src="images/person_3.jpg" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
           <h3 class="h5 font-weight-bold">3. SEO-експерт
 </h3>
@@ -1908,9 +2226,17 @@
    duration: 800, // values from 0 to 3000, with step 50ms
  });
  $(document).ready(function(){
-    var owl = $(".owl-carousel");
+       var owl = $("#products_slider");
     owl.owlCarousel({
-        items: 1,
+        items: 1, 
+        autoplay: false,
+        // autoPlaySpeed: 5000,
+        // autoPlayTimeout: 5000,
+        // autoplayHoverPause: true
+    });
+    var owl_l = $("#owl-carousel-logo");
+    owl_l.owlCarousel({
+        items: 6, 
         autoplay: false,
         // autoPlaySpeed: 5000,
         // autoPlayTimeout: 5000,
