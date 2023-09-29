@@ -1937,6 +1937,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
 }
 #services .services-list .service-item {
   margin-bottom: 3rem;
