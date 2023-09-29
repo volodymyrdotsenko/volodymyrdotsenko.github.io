@@ -3023,7 +3023,7 @@ footer h4.h05::after {
 }
 
 .service-content {
-    max-width: 30vw;
+    /* max-width: 30vw; */
 }
 
 .bgrid.service-item.animate-this.fadeInUp.animated {
@@ -3039,4 +3039,8 @@ ul.skills_list li {
 img.fa.fa-fiver {
     filter: invert(1);
     width: 2.5rem;
+}
+.bgrid.service-item.animate-this.fadeInUp.animated {
+    /* width: -webkit-fill-available !important; */
+    max-width: unset;
 }
