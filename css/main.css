@@ -3039,3 +3039,4 @@ img.fa.fa-fiver {
     filter: invert(1);
     width: 2.5rem;
 }
+.brick.folio-item { max-width: 40vw; margin: 1rem !important; overflow: hidden !important; border: 2rem solid #fff; } .item-wrap.animate-this.fadeInUp.animated { width: -webkit-fill-available; max-width: unset; }
