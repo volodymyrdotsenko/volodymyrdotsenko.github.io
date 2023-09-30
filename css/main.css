@@ -3049,3 +3049,24 @@ img.fa.fa-fiver {
 }
 
 ::before {}
+
+.frame__container iframe:first-child {
+    width: 100%;
+    z-index: 9999;
+}
+
+.frame__container iframe:nth-child(2) {
+    display: none;
+}
+
+.lg-sub-html:has(.frame__container) {
+    padding: unset;
+    max-height: 80vh !important;
+    /* display: flex; */
+    margin: 8vh 0 !important;
+    overflow: hidden;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* max-width: 90vw !important; */
+}
+
