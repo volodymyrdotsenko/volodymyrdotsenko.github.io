@@ -6351,10 +6351,15 @@ footer h4.h05::after {
 .services-list.block-1-2.block-tab-full.group {}
 
 ul.skills_list li {
-    text-align: left;
+    text-align: center;
     opacity: 1;
     padding-left: 2rem;
+    font-size: smaller;
     color: #ffffffd1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
 }
 img.fa.fa-fiver {
     filter: invert(1);
@@ -6640,4 +6645,10 @@ a {}
 .copyright {
     flex-direction: column;
 }
+}
+  i.fa.fa-paint-brush {}
+
+ul.skills_list li>i {
+    font-size: 2rem;
+    color: #f9a927;
 }
