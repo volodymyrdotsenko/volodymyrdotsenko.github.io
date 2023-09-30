@@ -3048,16 +3048,7 @@ img.fa.fa-fiver {
     height: 100vh !important;
 }
 
-::before {}
 
-.frame__container iframe:first-child {
-    width: 100%;
-    z-index: 9999;
-}
-
-.frame__container iframe:nth-child(2) {
-    display: none;
-}
 
 .lg-sub-html:has(.frame__container) {
     padding: unset;
@@ -3070,3 +3061,14 @@ img.fa.fa-fiver {
     /* max-width: 90vw !important; */
 }
 
+@media (max-width: 767px){
+  
+.frame__container iframe:first-child {
+    width: 100%;
+    z-index: 9999;
+}
+
+.frame__container iframe:nth-child(2) {
+    display: none;
+}
+}
