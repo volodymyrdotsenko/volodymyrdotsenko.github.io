@@ -3837,7 +3837,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
+  max-height: 6rem !important;
   -webkit-transform-style: preserve-3d;
+  object-fit: contain;
 }
 
 .owl-carousel .owl-nav.disabled,
@@ -3939,14 +3941,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 }
 /*
- * 	Owl Carousel - Auto Height Plugin
+ *  Owl Carousel - Auto Height Plugin
  */
 .owl-height {
   transition: height 500ms ease-in-out;
 }
 
 /*
- * 	Owl Carousel - Lazy Load Plugin
+ *  Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
@@ -3959,7 +3961,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /*
- * 	Owl Carousel - Video Plugin
+ *  Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
   position: relative;
