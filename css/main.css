@@ -4448,6 +4448,10 @@ input::-moz-focus-inner {
 .section-intro.with-bottom-sep {
   padding-bottom: 4.2rem;
   position: relative;
+  PADDING: UNSET;
+  margin: unset;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 .section-intro.with-bottom-sep::after {
   display: inline-block;
@@ -4837,12 +4841,13 @@ header .header-logo a {
 .home-content-tablecell {
   display: table-cell;
   vertical-align: middle;
-  z-index: 500;
+  display: 500;
 }
 .home-content-tablecell .row {
   position: relative;
   padding-top: 16.2rem;
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
+  MAX-WIDTH: 90VW;
 }
 .home-content-tablecell h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -5044,6 +5049,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   .home-content-tablecell .row {
     max-width: 90vw;
     padding: unset;
+    align-self: end;
+    margin-top: 10vh;
   }
   .home-content-tablecell h3 {
     font-size: 1.5rem;
@@ -5144,7 +5151,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   #about {
-    min-height: 636px;
+    min-height: min-content;
   }
   #about .about-wrap {
     max-width: 800px;
@@ -5155,7 +5162,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 900px) {
   #about .about-wrap {
-    max-width: 720px;
+    max-width: 90vw;
   }
   #about .lead {
     font-size: 3.6rem;
@@ -5219,7 +5226,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-size: cover;
   min-height: 800px;
   position: relative;
-  padding: 15rem 0 15rem;
+  padding: 5rem 0 5rem;
   color: rgba(255, 255, 255, 0.3);
 }
 #services .overlay {
@@ -5253,13 +5260,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #services .services-content {
   text-align: center;
-  max-width: 1440px;
+  max-width: 90vw;
 }
 #services .services-list {
   margin-top: 1.2rem;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between !important;
   width: 100%;
   height: 100%;
   display: flex !important;
@@ -5356,7 +5363,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0;
 }
 #portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
+  padding: 10rem 0 11rem;
   background: #111111;
 }
 #portfolio .section-intro h3 {
@@ -6370,7 +6377,7 @@ footer h4.h05::after {
 }
 
 .service-content {
-    max-width: 28vw;
+    max-width: 90%;
 }
 
 .bgrid.service-item.animate-this.fadeInUp.animated {
@@ -6402,7 +6409,7 @@ img.fa.fa-fiver {
 }
 .bgrid.service-item.animate-this.fadeInUp.animated {
     /* width: -webkit-fill-available !important; */
-    max-width: fit-content;
+    max-width: 43vw;
     text-align: center !important;
 }
 .lg-sub-html, .lg-sub-html div {
@@ -6744,3 +6751,8 @@ section#services {}
 }.footer_logo {
     text-align: center !important;
 }
+.col-full {
+    PADDING: unset;
+}
+
+.col-twelve>.col-twelve {}

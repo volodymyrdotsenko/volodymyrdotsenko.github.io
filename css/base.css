@@ -494,7 +494,7 @@ textarea {
   [class*="col-"] {
     padding: 0px 0px;
   }
-
+.col-six.tab-full {    padding: 0 10px;}
   .mob-1-4 {
     width: 25%;
   }
