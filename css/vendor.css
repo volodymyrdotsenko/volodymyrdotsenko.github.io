@@ -3524,7 +3524,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .group:before, .group:after {
-  display: table;
+  display: none;
   content: "";
   line-height: 0;
 }
