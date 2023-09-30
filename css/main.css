@@ -3044,3 +3044,8 @@ img.fa.fa-fiver {
     /* width: -webkit-fill-available !important; */
     max-width: unset;
 }
+.lg-sub-html, .lg-sub-html div {
+    height: 100vh !important;
+}
+
+::before {}
