@@ -3794,6 +3794,7 @@ td:last-child {
   position: absolute;
   left: 0;
   top: 0;
+  bottom: unset !important;
   width: 200vw;
   height: 100vh;
   margin-left: 0;
@@ -3802,7 +3803,7 @@ td:last-child {
   background-color: #f9a828;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 3.0s infinite ease-in-out;
+  animation: sk-scaleout 10s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
@@ -4499,7 +4500,7 @@ input::-moz-focus-inner {
 }
 
 .narrow {
-  max-width: 800px;
+  max-width: 90vw;
 }
 
 .js .animate-this, .js .animate-intro {
@@ -4850,6 +4851,7 @@ header .header-logo a {
   text-transform: uppercase;
   letter-spacing: .3rem;
   margin: 0 0 .9rem 0;
+  text-align: left;
 }
 .home-content-tablecell h1 {
   font-family: 'montserrat-regular';
@@ -4859,6 +4861,7 @@ header .header-logo a {
 }
 .home-content-tablecell .more {
   margin: 4.8rem 0 0 0;
+  text-align: left;
 }
 .home-content-tablecell .more .button {
   border-color: #FFFFFF;
@@ -5039,13 +5042,18 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 500px) {
   .home-content-tablecell .row {
-    max-width: 420px;
+    max-width: 90vw;
+    padding: unset;
   }
   .home-content-tablecell h3 {
     font-size: 1.5rem;
   }
   .home-content-tablecell h1 {
-    font-size: 6.2rem;
+    font-size: 5.2rem;
+    letter-spacing: .3rem;
+    font-weight: 100;
+    font-family: 'montserrat-regular';
+    text-align: left;
   }
 
   .home-social-list {
@@ -5100,7 +5108,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #about .about-wrap {
-  max-width: 850px;
+  max-width: 80vw;
 }
 #about span {
   color: #07617d;
@@ -5119,8 +5127,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: "";
   width: 3px;
   height: 6.6vh;
-  background-color: rgba(149, 149, 149, 0.7);
-  margin: 0 auto 2.4rem;
+  background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,221,0,1) 50%, rgba(0,212,255,1) 52%, rgba(0,212,255,1) 100%);
+  margin: unset;
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
@@ -5202,7 +5210,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #services {
-  background-color: #19191b;
+  background-color: #2f2f2f;
   /* background-image: url(../images/services-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
@@ -5260,6 +5268,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list .service-item {
   margin-bottom: 3rem;
   /* padding: 0 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #services .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
@@ -5278,10 +5289,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #ffffffbf;
   margin-bottom: 2rem !important;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   width: -webkit-fill-available;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* ------------------------------------------------------------------- 
@@ -5303,7 +5314,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     padding: 12rem 0 12rem;
   }
   #services .services-content {
-    max-width: 80vw;
+    max-width: 90vw;
     padding: unset;
   }
   #services .services-list .service-item {
@@ -5318,6 +5329,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     padding: 0 0px;
     width: 100% !important;
     max-width: 100% !important;
+    /* background-color: #19191b8a; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   #services .services-list .icon i {
     font-size: 5rem;
@@ -5782,6 +5797,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 1.5rem;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
+  justify-content: flex-start;
+  display: flex;
 }
 #clients .owl-carousel .owl-nav [class*='owl-'] {
   color: #FFFFFF;
@@ -5987,6 +6004,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: .6rem;
   font-weight: 500 !important;
   font-family: 'montserrat-regular';
+  text-align: center !important;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
   background: #f89e0f;
@@ -6267,7 +6285,7 @@ footer h4.h05::after {
   height: 63px;
   width: 60px;
   line-height: 63px;
-  text-align: center;
+  text-align: center !important;
   background-color: #000000;
   color: #888;
   text-align: center;
@@ -6374,7 +6392,8 @@ ul.skills_list li {
     align-items: center;
     padding: unset;
     justify-content: left;
-    gap: 2rem;
+    gap: 0.75rem;
+    word-break: break-word;
 }
 img.fa.fa-fiver {
     filter: invert(1);
@@ -6505,7 +6524,7 @@ footer {}
 
 h3.animate-intro.fadeInUp.animated strong {
     font-family: 'montserrat-bold';
-    font-size: inherit;
+    font-size: 4rem;
     color: #f9a927;
 }
 
@@ -6704,4 +6723,24 @@ div#preloader {}
     gap: 1rem;
     margin: unset;
     display: flex;
+}
+  div#loader {
+    width: 100rem;
+    height: 100rem;
+    left: 30vw;
+}
+
+.bgrid.service-item.animate-this.fadeInUp.animated {
+    border-top: 1px solid;
+    padding: 3rem 2rem !important;
+}
+
+section#services {}
+.footer_logo {
+    text-align: center;
+}
+  * {
+    text-align: left !important;
+}.footer_logo {
+    text-align: center !important;
 }

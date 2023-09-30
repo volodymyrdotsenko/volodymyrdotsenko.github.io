@@ -105,9 +105,10 @@
 	var ssOwlCarousel = function() {
 
 		$(".owl-carousel").owlCarousel({		
-	      nav: false,
+	      nav: true,
 			loop: true,
 	    	margin: 50,
+	    	dots:false,
 	    	responsiveClass:true,
 	    	responsive: {
 	         0:{

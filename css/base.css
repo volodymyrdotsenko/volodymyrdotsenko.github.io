@@ -492,7 +492,7 @@ textarea {
   }
 
   [class*="col-"] {
-    padding: 0 10px;
+    padding: 0px 0px;
   }
 
   .mob-1-4 {

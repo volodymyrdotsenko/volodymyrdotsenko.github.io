@@ -86,6 +86,9 @@
 		</nav>  <!-- end #menu-nav-wrap -->
 
 	</header>
+	<div style="/* display: none; */" id="loader">
+    
+</div>
    <!-- home
    ================================================== -->
    <section id="home">
@@ -97,10 +100,10 @@
 		   	<div class="row">
 		   		<div class="col-twelve">		   			
 			  		
-			  				<h3 class="animate-intro">Hi my name is Vov<strong>a.</strong></h3>
+			  				<h3 class="animate-intro">Hi! my name is Vova<strong>.</strong></h3>
 				  			<h1 class="animate-intro">
-							Here's  <br>
-							My Portfolio.
+							That's  <br>
+							My Portfolio page.
 				  			</h1>	
 
 				  			<div class="more animate-intro">
@@ -236,18 +239,22 @@ Expertise in schema implementation and API data exchange.</li>
 	            	<h3 class="h05">Back-End Development</h3>  
 
 		            <ul class="skills_list">
-	<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" style="
+	<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50px" height="50px" style="
     color: #fff !important;
     width: 6rem;
     font-size: 2.5rem;
-    height: 2.5rem;
+    height: min-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8rem;
+    width: min-content;
+    max-width: 3rem;
     position: relative;
-    right: 2rem;
+    right: 0rem;
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 "><path style="
     /* stroke: #f9a927; */
     fill: #f9a927;
@@ -579,10 +586,18 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
 
 	<!-- stats
    ================================================== -->
-   <section id="clients">
+  
+<section id="clients">
 
-		<div class="row animate-this">
+		<div class="row animate-this fadeInUp animated">
 			<div class="col-twelve">
+
+				
+				
+			</div> <div class="col-twelve">
+   			<h3>Contact</h3>
+   			<h1>Get In Touch.</h1>
+	<div class="col-twelve">
 
 				<div class="client-lists owl-carousel">
   					<div><img src="images/djinni_logo.png" alt=""></div>
@@ -596,9 +611,11 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
 				</div>
 				
 			</div> <!-- end col-twelve -->
+   			<p class="lead"> I look forward to applying this experience to future endeavors and contributing to innovative web development projects.</p>
+   		</div><!-- end col-twelve -->
 		</div> <!-- end row -->
 
-   </section> <!-- end clients -->
+   </section>
 
 
 	<!-- contact
@@ -607,14 +624,7 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
 
       <div class="overlay"></div>
 
-		<div class="row narrow section-intro with-bottom-sep animate-this fadeInUp animated">
-   		<div class="col-twelve">
-   			<h3>Contact</h3>
-   			<h1>Get In Touch.</h1>
-
-   			<p class="lead"> I look forward to applying this experience to future endeavors and contributing to innovative web development projects.</p>
-   		</div> 
-   	</div> <!-- end section-intro -->
+ <!-- end section-intro -->
 
    	<div class="row contact-content">
 
@@ -758,7 +768,16 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
     
 </div>
    </div>
-
+<script>
+  $(document).ready(function(){
+    $(".client-lists").owlCarousel({
+      items: 3,  // Number of items to display
+      loop: true,  // Enable loop
+      nav: true,  // Enable navigation arrows
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]  // Custom navigation arrow icons
+    });
+  });
+</script>
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
