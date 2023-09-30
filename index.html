@@ -777,13 +777,32 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
       navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]  // Custom navigation arrow icons
     });
   });
+
 </script>
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
-  
+  <script>
+  	const elements = document.querySelectorAll('.home-social-list .animate-intro');
+
+// Function to add the 'show' class when element is in view
+function checkInView() {
+  elements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elementTop < windowHeight) {
+      element.classList.add('show');
+    }
+  });
+}
+
+// Check for elements in view on initial load and scroll
+window.addEventListener('load', checkInView);
+window.addEventListener('scroll', checkInView);
+
+  </script>
 </body>
 
 </html>
