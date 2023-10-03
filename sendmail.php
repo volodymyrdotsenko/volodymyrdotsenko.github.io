@@ -21,7 +21,7 @@ $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose deb
   $mail->Port = 587;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 //Recipients
- $mail->setFrom('from@example.com', 'Mailer');
+ $mail->setFrom('alitrade.volodymyr@gmail.com', 'Mailer');
  $mail->addAddress('v.dotsenko@techage.eu', 'Joe User');     //Add a recipient
 // $mail->addCC('cc@example.com');
 // $mail->addBCC('bcc@example.com');
