@@ -630,46 +630,31 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
 
    		<div class="col-seven tab-full animate-this fadeInUp animated">
 
+
+
+   			<form action="#" id="form" class="form__body">
    			<h5>Send Me A Message</h5>
-
-            <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" novalidate="novalidate">     			
-
-               <div class="form-field">
- 					   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true">
-               </div>
-
-               <div class="row">
-                 	<div class="col-six tab-full">
-                 		<div class="form-field">
-                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true">
-                 		</div>		      			   
-		            </div>
-	            	<div class="col-six tab-full">	            
-	            		<div class="form-field">
-	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	                  </div>		     				   
-		            </div>
-               </div>
-                                         
-               <div class="form-field">
-	              	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true"></textarea>
-	            </div> 
-
-               <div class="form-field">
-                  <button class="submitform">Submit</button>
-
-                  <div id="submit-loader">
-                     <div class="text-loader">Sending...</div>                             
-       			      <div class="s-loader">
-							  	<div class="bounce1"></div>
-							  	<div class="bounce2"></div>
-							  	<div class="bounce3"></div>
-							</div>
+						<div class="form__item">
+							<label for="formName" class="form__label">Name*</label>
+							<input id="formName" type="text" name="name" class="form__input _req"></input>
 						</div>
-               </div>
+						<div class="form__item">
+							<label for="formEmail" class="form__label">E-mail*</label>
+							<input id="formEmail" type="text" name="email" class="form__input _req"></input>
+						</div>
+						<div class="form__item">
+							<label for="formSubject" class="form__label">Subject*</label>
+							<input id="formSubject" type="text" name="subject" class="form__input _req"></input>
+						</div>
+						<div class="form__item">
+							<label for="formMessage" class="form__label">Message:</label>
+							<textarea id="formMessage" type="text" name="message" class="form__input _req"></textarea>
+						</div>
 
-      		</form> <!-- end form -->
+						<button type="submit" class="formButton"></button>
+						</form>
+
+
 
             <!-- contact-warning -->
             <div id="message-warning"></div> 
@@ -802,6 +787,79 @@ function checkInView() {
 window.addEventListener('load', checkInView);
 window.addEventListener('scroll', checkInView);
 
+  </script>
+  <script>
+  	"use strict"
+  	document.addEventListener('DOMContentLoaded', function () {
+
+  		const form = document.getElementById('form');
+  		form.addEventListener('submit', formSend);
+
+  		async function formSend(e){
+  			e.preventDefault();
+  			let error = formValidate(form);
+
+  			let formData = new FormData(form);
+
+  			if(error === 0){
+  				form.classList.add('_sending');
+
+  				let response = await fetch('senmail.php', {
+  					method: 'POST',
+  					body: formData
+  				});
+  				if(response.ok){
+  					let result = await response.json();
+  					alert(result.message); 
+  					form.reset();
+  					form. classList.remove('_sending');
+  				} else {
+  					alert('Error!');
+					form.classList.remove('_sending');
+  				}
+
+  			} else {
+  				alert('Please fill all the required fields!');
+  			}
+
+  		}
+  		function formValidate(form) {
+
+  			let error = 0;
+
+  			let formReq = document.querySelectorAll('._req');
+
+  			for(let index = 0; index <formReq.length; index++){
+  				const input = formReq[index];
+  				console.log(input);
+  				formRemoveError(input);
+  				if (input.classList.contains ('_email')) {
+						if (emailTest (input)) {
+						formAddError (input);
+						error++;
+						}
+  			}else {
+					if (input.value === ''){
+					formAddError(input);
+					error++;
+				}
+
+		  		  }
+	  	} return error;
+	  }
+  		function formAddError (input) {
+		input.parentElement.classList.add('_error');
+		input.classList.add('_error');
+		}
+		function formRemoveError(input) {
+		input.parentElement.classList.remove('_error');
+		input.classList.remove ('_error');
+		}
+		function emailTest(input) {
+			return !/^\w+([\. -]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+		}
+
+  	});
   </script>
 </body>
 
