@@ -5379,7 +5379,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: rgba(242, 242, 242, 0.4);
 }
 #portfolio .portfolio-content {
-  margin-top: -22.2rem;
+    margin-top: -5rem;
+
 }
 #portfolio .bricks-wrapper:before, 
 #portfolio .bricks-wrapper:after {
@@ -6771,8 +6772,10 @@ section#services {}
 }
 
 section#about {
-    padding: 5vh 0;
-}
+        padding: 5vh 0;
+        min-height: unset;
+    
+    }
 
 .bgrid.service-item.animate-this.fadeInUp.animated {
     max-width: 49%;
