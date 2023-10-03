@@ -1,8 +1,9 @@
 <?php 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\ PHPMailer\Exception;
-require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+require 'phpmailer/src/Exception.php';
 
 
 
@@ -10,12 +11,20 @@ $mail = new PHPMailer (true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage ('en', 'phpmailer/language/');
 $mail->IsHTML (true);
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+ $mail->isSMTP();
+  $mail->Host = "smtp.gmail.com";//Сервер SMTP gmail
+  $mail->SMTPAuth = true;
+  $mail->Username = "alitrade.volodymyr@gmail.com";//В документации Google указано что логин это адрес вместе с собакой
+  $mail->Password = "BE6221ai";//Пароль
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;//Указываем что TLS
+  $mail->Port = 587;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-//0m кого письмо 
-$mail->setFrom('info@fls.guru', 'Фрилансер по жизни') ;
-//Кому отправить
-$mail->addAddress ('code@fls.guru');
-//Тема -письма
+//Recipients
+ $mail->setFrom('from@example.com', 'Mailer');
+ $mail->addAddress('v.dotsenko@techage.eu', 'Joe User');     //Add a recipient
+// $mail->addCC('cc@example.com');
+// $mail->addBCC('bcc@example.com');
 $mail->Subject = 'Привет! Это "Фрилансер по жизни"';
 //Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>';
