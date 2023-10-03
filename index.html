@@ -636,7 +636,7 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
    			<h5>Send Me A Message</h5>
 						<div class="form__item">
 							<label for="formName" class="form__label">Name*</label>
-							<input id="formName" type="text" name="name" class="form__input _req"></input>
+							<input id="formName" type="text" name="name" class="form__input "></input>
 						</div>
 						<div class="form__item">
 							<label for="formEmail" class="form__label">E-mail*</label>
@@ -644,11 +644,11 @@ Template engines like Twig (OpenCart) and Liquid (Shopify).
 						</div>
 						<div class="form__item">
 							<label for="formSubject" class="form__label">Subject*</label>
-							<input id="formSubject" type="text" name="subject" class="form__input _req"></input>
+							<input id="formSubject" type="text" name="subject" class="form__input "></input>
 						</div>
 						<div class="form__item">
 							<label for="formMessage" class="form__label">Message:</label>
-							<textarea id="formMessage" type="text" name="message" class="form__input _req"></textarea>
+							<textarea id="formMessage" type="text" name="message" class="form__input "></textarea>
 						</div>
 
 						<button type="submit" class="formButton"></button>
@@ -834,8 +834,8 @@ window.addEventListener('scroll', checkInView);
   				console.log(input);
   				formRemoveError(input);
   				if (input.classList.contains ('_email')) {
-						if (emailTest (input)) {
-						formAddError (input);
+						if (emailTest(input)) {
+						formAddError(input);
 						error++;
 						}
   			}else {
@@ -856,8 +856,8 @@ window.addEventListener('scroll', checkInView);
 		input.classList.remove ('_error');
 		}
 		function emailTest(input) {
-			return !/^\w+([\. -]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-		}
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.teest(input.value);
+    }
 
   	});
   </script>
