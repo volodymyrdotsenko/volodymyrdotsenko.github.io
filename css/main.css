@@ -1,3 +1,7 @@
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("micons/micons.css");
+@import url("fonts.css");
+
 /* =================================================================== 
  *
  *  Infinity v1.0 Main Stylesheet
@@ -30,10 +34,6 @@
  *  01. webfonts and iconfonts - (_document-setup)
  *
  * ------------------------------------------------------------------- */
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
-@import url("fonts.css");
-
 
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
@@ -1826,8 +1826,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
 }
 #about h3::before {
-  display: block;
-  content: "";
+  /* display: block; */
+  /* content: ""; */
   width: 3px;
   height: 9.6rem;
   background-color: rgba(149, 149, 149, 0.7);
@@ -3108,7 +3108,7 @@ img.fa.fa-fiver {
 .fa.fa-fiver {
     width: 4rem !important;
     height: 4rem !important;
-    filter: saturate(0);
+    filter: brightness(0.5) grayscale(1);
 }
 
 li.animate-intro.fadeInUp.animated {
@@ -3319,9 +3319,7 @@ a#header-menu-trigger.opaque {
  *  01. webfonts and iconfonts - (_document-setup)
  *
  * ------------------------------------------------------------------- */
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
-@import url("fonts.css");
+
 
 
 /* ===================================================================
@@ -4663,7 +4661,7 @@ header .header-logo a {
   top: 0;
   visibility: hidden;
   overflow-y: auto;
-  z-index: 800;
+  z-index: 99999999999999999999;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(100%);
@@ -4880,7 +4878,7 @@ header .header-logo a {
 .home-social-list {
   position: absolute;
   left: 48px;
-  top: 54px;
+  top: 3rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -4999,7 +4997,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 2rem;
   }
   .home-content-tablecell h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -5118,7 +5116,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #about .about-wrap {
-  max-width: 80vw;
+  max-width: 90vw;
 }
 #about span {
   color: #07617d;
@@ -5132,11 +5130,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   letter-spacing: .3rem;
   position: relative;
 }
-#about h3::before {
+#about h3::after {
   display: block;
   content: "";
-  width: 1rem;
-  height: 7.6vh;
+  width: 11rem;
+  height: 4vh;
+  max-width: 50vw;
   background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,221,0,1) 50%, #0057b7  52%, #0057b7 100%);
   margin: unset;
 }
@@ -5220,7 +5219,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #services {
-  background-color: #2f2f2f;
+  background-color: #fff;
   /* background-image: url(../images/services-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
@@ -5253,13 +5252,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
 #services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  color: #000;
 }
 #services .section-intro h1 {
-  color: #FFFFFF;
+  color: #000;
 }
 #services .section-intro .lead {
-  color: #ffffffd1;
+  color: #000;
 }
 #services .services-content {
   text-align: center;
@@ -5278,6 +5277,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list .service-item {
   margin-bottom: 3rem;
   /* padding: 0 50px; */
+  background: #000;
+  background: #ff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -5321,7 +5322,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 768px) {
   #services {
-    padding: 12rem 0 12rem;
+    padding: 0 0 6rem;
+    z-index: 99;
   }
   #services .services-content {
     max-width: 90vw;
@@ -5791,6 +5793,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #clients {
   background-color: #e9eaea;
   padding: 4.8rem 0 4.8rem;
+  z-index: 999999999;
 }
 #clients .client-lists .owl-item {
   opacity: .6;
@@ -6445,9 +6448,8 @@ img.fa.fa-fiver {
 }
 }
 .fa.fa-fiver {
-    width: 4rem !important;
-    height: 4rem !important;
-    filter: saturate(0);
+    /* width: 5rem !important; */
+    /* height: 5rem !important; */
 }
 
 li.animate-intro.fadeInUp.animated {
@@ -6607,7 +6609,6 @@ li.animate-intro.fadeInUp.animated:hover {
 }
 *:has(h1.logo_v) {
     filter: unset !important;
-    min-height: 5vh;
 }
 li.animate-intro.fadeInUp.animated,li.animate-intro.fadeInUp.animated a {
     cursor: pointer;
@@ -6757,6 +6758,7 @@ section#services {}
     text-align: center !important;
 }
 .col-full {
+    color: #000 !important;
     PADDING: unset;
 }
 
@@ -6772,9 +6774,9 @@ section#services {}
 }
 
 section#about {
-        padding: 5vh 0;
+        padding: 6rem 0 0;
         min-height: unset;
-    
+        z-index: 10;
     }
 
 .bgrid.service-item.animate-this.fadeInUp.animated {
@@ -6854,4 +6856,34 @@ transition: all 0.5s ease Os;
 
 opacity: 1;
 visibility: visible;
+}
+.owl-item i.fa.fa-github, .owl-item i.fa.fa-linkedin, .owl-item i.fa.fa-telegram {
+    font-size: 6rem;
+    color: #000;
+}
+
+div#loader {
+    DISPLAY: block !IMPORTANT;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    opacity: .3;
+}
+@media(min-width:700px) and (max-width:1000px){
+    h1.animate-intro.fadeInUp.animated, .home-content-tablecell .more{
+        margin: 1rem;
+    }
+}
+h3.animate-this.fadeInUp.animated {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    section {
+    z-index: 99;
+}
+
+
+section#home {
+    z-index: 9 !important;
 }
